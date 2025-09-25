@@ -1,0 +1,132 @@
+{
+	"Media Query for Tablet": {
+		"scope": "scss",
+		"prefix": "mt",
+		"body": [
+			"@include mq('640') {",
+			"  $1",
+			"}"
+		]
+	},
+	"Media Query for Desktop": {
+		"scope": "scss",
+		"prefix": "md",
+		"body": [
+			"@include mq('1026') {",
+			"  $1",
+			"}"
+		]
+	},
+	"Custom Media Query": {
+		"scope": "scss",
+		"prefix": "mq",
+		"body": [
+			"@include mq('${1:1000}') {",
+			"  ${2://code}",
+			"}"
+		]
+	},
+	"Mixin for text configuration": {
+		"scope": "scss",
+		"prefix": "tc",
+		"body": [
+			"@include textConfig($${1:primary-color}, ${2:16}, $${3:fontRegular}, ${4:16});"
+		]
+	},
+	"Mixin for display flex": {
+		"scope": "scss",
+		"prefix": "df",
+		"body": [
+			"@include display-flex();"
+		]
+	},
+	"Mixin for transition": {
+		"scope": "scss",
+		"prefix": "tr",
+		"body": [
+			"@include transition();"
+		]
+	},
+	"Mixin for Size": {
+		"scope": "scss",
+		"prefix": "sz",
+		"body": [
+			"@include size($1);"
+		]
+	},
+	"Mixin for Aboslute Position": {
+		"scope": "scss",
+		"prefix": "abs",
+		"body": [
+			"@include abs-position($1);"
+		]
+	},
+	"Mixin for Store Components Container": {
+		"scope": "scss",
+		"prefix": "sc",
+		"body": [
+			":global(.vtex-store-components-3-x-container) {",
+			"  max-width: ${1:none};",
+      "  padding: ${2:0};",
+			"}"
+		]
+	},
+	"Mixin for 1 Nested Structure": {
+		"scope": "scss",
+		"prefix": "ns1",
+		"body": [
+			"&$1 {",
+			"  &$2 {",
+			"  }",
+			"}",
+		]
+	},
+	"Mixin for 2 Nested Structure": {
+		"scope": "scss",
+		"prefix": "ns2",
+		"body": [
+			"&$1 {",
+			"  &$2 {",
+			"  }",
+			"",
+			"  &$3 {",
+			"  }",
+			"}",
+		]
+	},
+	"Mixin for 3 Nested Structure": {
+		"scope": "scss",
+		"prefix": "ns3",
+		"body": [
+			"&$1 {",
+			"  &$2 {",
+			"  }",
+			"",
+			"  &$3 {",
+			"  }",
+			"",
+			"  &$4 {",
+			"  }",
+			"}",
+		]
+	},
+	"Mixin for 4 Nested Structure": {
+		"scope": "scss",
+		"prefix": "ns4",
+		"body": [
+			"&$1 {",
+			"  &$2 {",
+			"  }",
+			"",
+			"  &$3 {",
+			"  }",
+			"",
+			"  &$4 {",
+			"  }",
+			"",
+			"  &$5 {",
+			"  }",
+			"}",
+		]
+	},
+}
